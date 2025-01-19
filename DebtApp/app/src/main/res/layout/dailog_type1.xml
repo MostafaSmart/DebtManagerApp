@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="24dp"
+    style="@style/DialogBackground">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="النوع"
+        android:textSize="@dimen/font_size_xxlarge"
+        android:layout_gravity="center"
+        style="@style/textColor2Wite_black"
+
+        android:layout_height="wrap_content"/>
+  <RadioGroup
+      android:layout_width="match_parent"
+      android:orientation="vertical"
+      android:id="@+id/radio_type_parint"
+      android:layout_height="wrap_content">
+
+      <RadioButton
+          android:layout_width="wrap_content"
+          android:text="عملاء"
+          android:textSize="@dimen/font_size_large"
+          style="@style/textColor2Wite_black"
+
+          android:id="@+id/radio_custmr"
+          android:layout_height="wrap_content"/>
+
+
+      <RadioButton
+          android:layout_width="wrap_content"
+          android:text="موردين"
+          android:textSize="@dimen/font_size_large"
+      android:id="@+id/radio_splayer"
+          style="@style/textColor2Wite_black"
+          android:layout_height="wrap_content"/>
+
+      <RadioButton
+          android:layout_width="wrap_content"
+          android:text="عام"
+          android:textSize="@dimen/font_size_large"
+          style="@style/textColor2Wite_black"
+
+          android:id="@+id/radio_gnral"
+          android:layout_height="wrap_content"/>
+
+  </RadioGroup>
+
+
+
+</LinearLayout>

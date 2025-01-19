@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="rtl"
+    style="@style/backGround2"
+    tools:context=".ui.fragmints.AddAmountFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/root_add"
+        android:orientation="vertical"
+        style="@style/backGround2"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/_16sdp"
+                style="@style/backGround2"
+
+                android:layout_height="match_parent">
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="8dp"
+                    android:layout_centerHorizontal="true"
+
+                    android:id="@+id/name_amount_contenrer"
+
+
+                    >
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+
+
+
+
+                        android:id="@+id/TextInputLayout_name"
+
+
+                        style="@style/MyTextInputSelectd"
+
+
+
+
+                        app:endIconTintMode="src_atop"
+                        android:background="@color/liteBlack"
+                        >
+
+                        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                            android:id="@+id/input_name_dropmenu"
+                            android:layout_width="match_parent"
+
+                            android:hint="الاسم"
+
+                            style="@style/textColor1Wite_black"
+                            android:layout_height="wrap_content"
+
+                            android:inputType="text"
+
+
+
+                            tools:ignore="TouchTargetSizeCheck" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <ImageButton
+                            android:id="@+id/btn_clear_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:visibility="gone"
+                            android:paddingHorizontal="@dimen/_8sdp"
+                            android:layout_alignParentEnd="true"
+                            android:paddingBottom="@dimen/_12sdp"
+                            android:layout_marginEnd="@dimen/_35sdp"
+                            android:layout_alignParentBottom="true"
+                            android:src="@drawable/close_icone"
+
+
+
+                            />
+                </RelativeLayout>
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    style="@style/MyTextInputLayout"
+
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/input_amount_number"
+                        android:inputType="number"
+
+
+                        style="@style/textColor1Wite_black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="المبلغ "
+                        tools:ignore="TouchTargetSizeCheck" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    style="@style/MyTextInputLayout"
+
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/input_amount_detels"
+                        android:inputType="text"
+
+
+                        style="@style/textColor1Wite_black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="التفاصيل"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:text="23.23423"
+                    android:textSize="@dimen/font_size_large"
+                    android:textStyle="bold"
+                    style="@style/textColor2Wite_black"
+                    android:id="@+id/text_amount_date"
+                    android:layout_height="wrap_content"/>
+
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:id="@+id/layout_date_time"-->
+<!--                    android:visibility="gone"-->
+<!--                    android:layout_height="wrap_content">-->
+<!--                    <ImageButton-->
+<!--                        android:id="@+id/btn_close_date_picker"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="match_parent"-->
+
+<!--                        android:paddingHorizontal="@dimen/_8sdp"-->
+<!--                        android:layout_alignParentEnd="true"-->
+<!--                        android:paddingBottom="@dimen/_12sdp"-->
+<!--                        android:layout_marginEnd="@dimen/_35sdp"-->
+<!--                        android:layout_alignParentBottom="true"-->
+<!--                        android:src="@drawable/close_icone"/>-->
+<!--                    <DatePicker-->
+<!--                        android:id="@+id/amount_date_picker"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:calendarViewShown="false"-->
+
+<!--                        android:spinnersShown="true" >-->
+
+<!--                    </DatePicker>-->
+
+<!--                    <android.widget.Button-->
+<!--                        android:id="@+id/btn_next_time"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_marginStart="30dp"-->
+<!--                        android:layout_marginEnd="30dp"-->
+<!--                        android:layout_marginTop="24dp"-->
+<!--                        android:text="اختيار التاريخ "-->
+<!--                        android:background="@drawable/btn_back_black"-->
+<!--                        android:textColor="@color/white"-->
+
+<!--                        android:layout_height="match_parent"/>-->
+<!--                </LinearLayout>-->
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/layout_btns_save"
+                    android:layout_marginBottom="@dimen/spacing_standard"
+                    android:layout_marginTop="@dimen/spacing_large"
+                    android:layout_height="wrap_content">
+                    <android.widget.Button
+                        android:id="@+id/btn_forhim"
+                        android:layout_width="wrap_content"
+
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginTop="24dp"
+                        android:text="له "
+                        android:drawableEnd="@drawable/icon_arrow_for_lah"
+                        android:background="@drawable/btn_back_wite"
+                        android:textColor="@color/green"
+                        android:drawableTintMode="multiply"
+
+                        android:layout_height="match_parent"/>
+                    <android.widget.Button
+                        android:id="@+id/btn_not_forhim"
+                        android:layout_width="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginTop="24dp"
+                        android:text="عليه "
+                        android:drawableEnd="@drawable/icon_arrow_for_alih"
+                        android:background="@drawable/btn_back_wite"
+                        android:textColor="@color/red"
+
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/spacing_standard"
+                    android:id="@+id/prog_add"
+                    android:layout_height="wrap_content">
+
+                </ProgressBar>
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+
+
+</FrameLayout>

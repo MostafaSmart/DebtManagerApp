@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layoutDirection="rtl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root_home"
+    style="@style/backGround2"
+    android:orientation="vertical"
+    tools:context=".ui.fragmints.HomeFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/layoutSerch"
+        android:visibility="gone"
+        android:layout_margin="@dimen/spacing_standard"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+
+
+
+
+            android:id="@+id/TextInputLayout_name"
+
+
+            style="@style/MyTextInputSelectd"
+
+
+
+
+            app:endIconTintMode="src_atop"
+            android:background="@color/liteBlack"
+            >
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/input_search_dropmenu"
+                android:layout_width="match_parent"
+
+                android:hint="الاسم"
+
+                style="@style/textColor1Wite_black"
+                android:layout_height="wrap_content"
+
+                android:inputType="text"
+
+
+
+                tools:ignore="TouchTargetSizeCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/close_icone"
+            android:background="@null"
+            android:layout_gravity="end"
+            android:id="@+id/icon_close_seach"
+
+            android:padding="@dimen/spacing_standard"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/custmer_summery_list"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>

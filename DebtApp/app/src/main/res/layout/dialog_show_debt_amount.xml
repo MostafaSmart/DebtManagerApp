@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    style="@style/DialogBackground"
+    android:padding="@dimen/spacing_standard"
+    android:layout_height="wrap_content">
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:orientation="horizontal"
+      android:layout_marginTop="@dimen/spacing_standard"
+      android:layout_marginRight="@dimen/spacing_standard_new"
+      android:layout_height="wrap_content">
+      <TextView
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:id="@+id/textHederName"
+          style="@style/textColor2Wite_black"
+          android:textSize="@dimen/font_size_medium"
+          android:textStyle="bold"
+          android:text="سيبمن"
+
+          android:layout_height="wrap_content"/>
+      <ImageView
+          android:layout_width="0dp"
+          android:layout_gravity="center_vertical"
+          android:layout_weight="0.5"
+          android:id="@+id/icon_for"
+          android:src="@drawable/icon_arrow_for_alih"
+          android:layout_height="wrap_content"/>
+  </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginVertical="@dimen/spacing_standard_new"
+        android:background="@color/blue_lite"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="@dimen/spacing_standard"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="المبلغ :"
+            style="@style/textColor2Wite_black"
+
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="3444 "
+            android:id="@+id/textAmount"
+            style="@style/textColor2Wite_black"
+
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="@dimen/spacing_standard"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="التاريخ :"
+            style="@style/textColor2Wite_black"
+
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="23-324-2202 "
+            android:id="@+id/textDate"
+            style="@style/textColor2Wite_black"
+
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="@dimen/spacing_standard"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="الوقت :"
+            style="@style/textColor2Wite_black"
+
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="23-324-2202 "
+            android:id="@+id/textTime"
+            style="@style/textColor2Wite_black"
+
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="@dimen/spacing_standard"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="التفاصيل :"
+            style="@style/textColor2Wite_black"
+
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="سينم نمتنميتب منتنمتب نتنتيسب نت "
+            android:id="@+id/textDetels"
+            style="@style/textColor2Wite_black"
+
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginVertical="@dimen/spacing_standard_new"
+        android:background="@color/blue_lite"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="@dimen/spacing_standard"
+        android:layout_height="wrap_content">
+
+
+        <android.widget.Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تعديل"
+           android:textColor="@color/black"
+            android:id="@+id/btnEditDebt"
+            android:background="@drawable/btn_back_wite"
+            />
+        <android.widget.Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تم"
+android:layout_marginRight="@dimen/spacing_standard_new"
+            android:textColor="@color/black"
+            android:id="@+id/btnDone"
+            android:background="@drawable/btn_back_wite"
+            />
+    </LinearLayout>
+
+</LinearLayout>
